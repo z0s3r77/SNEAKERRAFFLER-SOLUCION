@@ -1,4 +1,4 @@
-package edu.craptocraft;
+package edu.craptocraft.sneakerraffle;
 
 import static org.junit.Assert.assertTrue;
 
