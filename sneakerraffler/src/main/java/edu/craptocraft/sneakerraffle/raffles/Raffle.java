@@ -1,5 +1,7 @@
 package edu.craptocraft.sneakerraffle.raffles;
 
+import edu.craptocraft.sneakerraffle.sizes.Sizes;
+
 public interface Raffle {
     
     public void sizesRun(Sizes sizesInitial, Sizes sizesFinal);
