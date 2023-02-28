@@ -1,5 +1,6 @@
 package edu.craptocraft.sneakerraffle.gui;
 
+import edu.craptocraft.sneakerraffle.entries.Entry;
 import edu.craptocraft.sneakerraffle.raffles.Raffle;
 
 public class GUI {
@@ -13,6 +14,11 @@ public class GUI {
         "\t\t" + "|=====;__/___./" + "\n" +
         "\t\t" + "\'-\'-\'-\"\"\"\"\"\"\"`" + "\n" +
         "\t\t" + sneaker.toString());
+    }
+
+
+    public static void drawEntry(Entry entry){
+        System.out.println(entry.toString());
     }
 
 

@@ -96,11 +96,11 @@ public class App
         entry.setTotal(craft.price());
         entry.payment("squanchy@paypal.com");
 
-        // /**
-        //  * Añade a la clase GUI la rutina drawEntry()
-        //  * para representar la entrada.
-        //  */
-        // GUI.drawEntry(entry);
+        /**
+         * Añade a la clase GUI la rutina drawEntry()
+         * para representar la entrada.
+         */
+        GUI.drawEntry(entry);
 
         // /**
         //  * Añade la participacion en la rifa.
