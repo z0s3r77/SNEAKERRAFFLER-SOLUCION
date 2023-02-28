@@ -1,6 +1,9 @@
 package edu.craptocraft.sneakerraffle;
 
+import edu.craptocraft.sneakerraffle.gui.GUI;
 import edu.craptocraft.sneakerraffle.raffles.Raffle;
+import edu.craptocraft.sneakerraffle.raffles.Sneaker;
+import edu.craptocraft.sneakerraffle.sizes.Sizes;
 
 /**
  * Cuando una tienda de zapatillas recibe
@@ -67,8 +70,8 @@ public class App
 
         Raffle craft = new Sneaker("Nike Craft General Purpose", "Brown", 109.99);
         // indica el rango de tallas
-        // craft.sizesRun(Sizes.CUARENTA, Sizes.CUARENTAYDOS);
-        // GUI.drawSneaker(craft);
+        craft.sizesRun(Sizes.CUARENTA, Sizes.CUARENTAYDOS);
+        GUI.drawSneaker(craft);
 
         // /**
         //  * El usuario Squanchy introduce sus datos
@@ -165,7 +168,7 @@ public class App
          * Muestra el email de todos los participantes en la rifa.
          */
 
-        System.out.println("\n\t\tEntries:\n\t\t" + craft.listEntries());
+        // System.out.println("\n\t\tEntries:\n\t\t" + craft.listEntries());
 
         /**
          * Summer se lo piensa y decide anular su participacion.

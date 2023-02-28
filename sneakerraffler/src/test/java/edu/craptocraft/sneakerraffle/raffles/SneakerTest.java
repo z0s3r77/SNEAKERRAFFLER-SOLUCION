@@ -7,6 +7,8 @@ import static org.junit.Assert.assertTrue;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import edu.craptocraft.sneakerraffle.sizes.Sizes;
+
 public class SneakerTest {
     
     static Sneaker sneaker;
@@ -25,7 +27,6 @@ public class SneakerTest {
     }
 
 
-    // Test que creo que serán necesarios que derivan del constructor y segun el UML
     @Test public void priceTest(){
 
         assertEquals(109.99, sneaker.price(), 0);
@@ -44,4 +45,22 @@ public class SneakerTest {
         assertEquals("Brown", sneaker.getStyle());
 
     }  
+
+    @Test public void sizesRunTest(){
+
+        sneaker.sizesRun(Sizes.CUARENTA, Sizes.CUARENTAYDOS);
+        assertEquals(4, sneaker.sizes().length);
+
+    }
+
+    @Test public void toStringTest(){
+        
+        String result = "\nNike Craft General Purpose\nBrown\n109.99 €\n[7.0 US, 7.5 US, 8.0 US, 8.5 US]";
+        sneaker.sizesRun(Sizes.CUARENTA, Sizes.CUARENTAYDOS);
+
+        assertEquals(result, sneaker.toString());
+
+    }
+
+
 }
