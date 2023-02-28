@@ -73,27 +73,27 @@ public class App
         craft.sizesRun(Sizes.CUARENTA, Sizes.CUARENTAYDOS);
         GUI.drawSneaker(craft);
 
-        // /**
-        //  * El usuario Squanchy introduce sus datos
-        //  * para obtener una participacion.
-        //  * - Nombre
-        //  * - Email
-        //  * - Talla
-        //  * - Direccion de envio
-        //  * - Metodo de pago
-        //  * - Total
-        //  * 
-        //  * La igualdad de dos objetos Entry
-        //  * se determina por las propiedades
-        //  * email y método de pago.
-        //  */
+        /**
+         * El usuario Squanchy introduce sus datos
+         * para obtener una participacion.
+         * - Nombre
+         * - Email
+         * - Talla
+         * - Direccion de envio
+         * - Metodo de pago
+         * - Total
+         * 
+         * La igualdad de dos objetos Entry
+         * se determina por las propiedades
+         * email y método de pago.
+         */
 
-        // Entry entry = new Entry("squanchy@closet.in");
-        // entry.setUserName("Squanchy");
-        // entry.setSize(Sizes.CUARENTA);
-        // entry.setAddress("Nearest closet s/n, 90210, Jerry's House, Via Lactea");
-        // entry.setTotal(craft.price());
-        // entry.payment("squanchy@paypal.com");
+        Entry entry = new Entry("squanchy@closet.in");
+        entry.setUserName("Squanchy");
+        entry.setSize(Sizes.CUARENTA);
+        entry.setAddress("Nearest closet s/n, 90210, Jerry's House, Via Lactea");
+        entry.setTotal(craft.price());
+        entry.payment("squanchy@paypal.com");
 
         // /**
         //  * Añade a la clase GUI la rutina drawEntry()
