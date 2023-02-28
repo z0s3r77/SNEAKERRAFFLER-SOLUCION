@@ -1,5 +1,6 @@
 package edu.craptocraft.sneakerraffle;
 
+import edu.craptocraft.sneakerraffle.entries.Entry;
 import edu.craptocraft.sneakerraffle.gui.GUI;
 import edu.craptocraft.sneakerraffle.raffles.Raffle;
 import edu.craptocraft.sneakerraffle.raffles.Sneaker;
