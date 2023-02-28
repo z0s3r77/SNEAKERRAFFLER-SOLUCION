@@ -1,5 +1,6 @@
 package edu.craptocraft.sneakerraffle;
 
+import edu.craptocraft.sneakerraffle.raffles.Raffle;
 
 /**
  * Cuando una tienda de zapatillas recibe
