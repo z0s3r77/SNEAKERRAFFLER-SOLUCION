@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
+import edu.craptocraft.sneakerraffle.entries.Entry;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -60,6 +61,21 @@ public class SneakerTest {
 
         assertEquals(result, sneaker.toString());
 
+    }
+
+    @Test public  void registerTest(){
+
+        Entry entry = new Entry("squanchy@closet.in");
+        entry.setUserName("Squanchy");
+        entry.setSize(Sizes.CUARENTA);
+        entry.setAddress("Nearest closet s/n, 90210, Jerry's House, Via Lactea");
+        entry.setTotal(100.0);
+        entry.payment("squanchy@paypal.com");
+
+        sneaker.register(entry);
+
+        //Esperamos que haya una Entry Registrada
+        assertEquals(1 , sneaker.totalEntries(), 0);
     }
 
 

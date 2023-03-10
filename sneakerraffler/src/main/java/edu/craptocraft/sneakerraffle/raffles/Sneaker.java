@@ -2,6 +2,7 @@ package edu.craptocraft.sneakerraffle.raffles;
 
 import java.util.Arrays;
 
+import edu.craptocraft.sneakerraffle.entries.Entry;
 import edu.craptocraft.sneakerraffle.sizes.Sizes;
 
 public class Sneaker implements Raffle {
@@ -56,11 +57,11 @@ public class Sneaker implements Raffle {
     }
 
     @Override
-    public void register() {
+    public void register(Entry entry) {
     }
 
     @Override
-    public void cancel() {
+    public void cancel(Entry entry) {
     }
 
     @Override

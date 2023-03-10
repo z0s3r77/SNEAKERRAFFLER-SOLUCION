@@ -102,23 +102,23 @@ public class App
          */
         GUI.drawEntry(entry);
 
-        // /**
-        //  * Añade la participacion en la rifa.
-        //  * El sistema comprueba que no existe doble
-        //  * entrada, es decir, que una misma
-        //  * persona registre dos participaciones.
-        //  * Has de chequear el correo electronico
-        //  * y el metodo de pago. Si uno de los dos
-        //  * es idéntico, se trata de la misma persona
-        //  * y no se añade la participacion a la rifa.
-        //  */
+         /**
+            * Añade la participacion en la rifa.
+        * El sistema comprueba que no existe doble
+          * entrada, es decir, que una misma
+         * persona registre dos participaciones.
+         * Has de chequear el correo electronico
+         * y el metodo de pago. Si uno de los dos
+         * es idéntico, se trata de la misma persona
+         * y no se añade la participacion a la rifa.
+          */
 
         // // Registra la participacion de Squanchy
         // // Muestra el total de participaciones 
         // // en la rifa que ha de ser 1
 
-        // craft.register(entry);
-        // System.out.println("\t\tSquanchy in:" + craft.totalEntries());
+      //  craft.register(entry);
+  //      System.out.println("\t\tSquanchy in:" + craft.totalEntries());
 
         // // Squanchy intenta registrar otra participacion
         // // pero el sistema bloquea el registro.
