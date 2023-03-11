@@ -2,6 +2,8 @@ package edu.craptocraft.sneakerraffle;
 
 import edu.craptocraft.sneakerraffle.entries.Entry;
 import edu.craptocraft.sneakerraffle.gui.GUI;
+import edu.craptocraft.sneakerraffle.payment.Payment;
+import edu.craptocraft.sneakerraffle.payment.Paypal;
 import edu.craptocraft.sneakerraffle.raffles.Raffle;
 import edu.craptocraft.sneakerraffle.raffles.Sneaker;
 import edu.craptocraft.sneakerraffle.sizes.Sizes;
@@ -205,13 +207,13 @@ public class App
          * para todos.
          */
 
-        // Payment paypal = new Paypal();
-        // boolean userExists = paypal.autentication(winner.getPayment());
-        // boolean transaction = false;
-        // if (userExists) {
-        //     transaction = paypal.pay(winner.getPayment(), winner.getTotal());
-        // }
+         Payment paypal = new Paypal();
+         boolean userExists = paypal.autentication(winner.getPayment());
+         boolean transaction = false;
+         if (userExists) {
+             transaction = paypal.pay(winner.getPayment(), winner.getTotal());
+         }
 
-        // System.out.println("\t\t" + winner.getPayment() + " credit: " + paypal.credit(winner.getPayment()));
+         System.out.println("\t\t" + winner.getPayment() + " credit: " + paypal.credit(winner.getPayment()));
     }
 }
