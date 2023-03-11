@@ -124,8 +124,8 @@ public class App
         // // pero el sistema bloquea el registro.
         // // El total de participaciones sigue siendo 1
 
-        // craft.register(entry);
-        // System.out.println("\t\tSquanchy out!:" + craft.totalEntries());
+        craft.register(entry);
+        System.out.println("\t\tSquanchy out!:" + craft.totalEntries());
 
         // // Squanchy intenta registrar otra participacion
         // // cambiando su email pero manteniendo su metodo de pago
