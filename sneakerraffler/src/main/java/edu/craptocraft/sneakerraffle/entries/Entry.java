@@ -67,7 +67,7 @@ public class Entry {
     public String toString() {
 
         StringBuilder entry = new StringBuilder();
-        entry.append("\nemail: "+this.getEmail()+"\nSize: "+this.getSize()+"\nAddres: "+this.getAddress()+"\nPayment: "+this.getPayment()+"\nTotal: "+this.getTotal()+" €");
+        entry.append("\nemail: "+this.getEmail()+"\nSize: "+this.getSize()+"\nAddres: "+this.getAddress()+"\nPayment: "+this.getPayment()+"\nTotal: "+this.getTotal()+" €\n");
         return entry.toString();
     }
 }
