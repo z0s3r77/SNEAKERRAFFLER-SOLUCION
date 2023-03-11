@@ -51,7 +51,23 @@ public class BucketTest {
         bucket.add(doubleEntry);
 
         assertEquals(1, bucket.totalEntries(), 0);
+        bucket.delete(entry);
+        bucket.delete(doubleEntry);
 
 
     }
+
+    @Test
+    public  void deleteTest(){
+
+        Entry entry = new Entry("squanchy@closet.in");
+        entry.payment("squanchy@paypal.com");
+
+        bucket.add(entry);
+
+        bucket.delete(entry);
+        assertEquals(1, bucket.totalEntries(), 0);
+
+    }
+
 }

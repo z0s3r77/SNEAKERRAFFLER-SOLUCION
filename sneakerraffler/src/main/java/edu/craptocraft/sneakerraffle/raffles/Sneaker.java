@@ -58,18 +58,23 @@ public class Sneaker implements Raffle {
     }
 
     @Override
-    public void register(Entry entry) {
+    public void register(Entry ... entry) {
 
         if (this.bucket == null) {
             this.bucket = new Bucket();
         }
 
-        this.bucket.add(entry);
+        for (Entry entry2 : entry) {
+
+            this.bucket.add(entry2);
+
+        }
 
     }
 
     @Override
     public void cancel(Entry entry) {
+        this.bucket.delete(entry);
     }
 
     @Override
@@ -81,7 +86,12 @@ public class Sneaker implements Raffle {
 
     @Override
     public String listEntries() {
-        return null;
+        return this.bucket.listEntries();
+    }
+
+    @Override
+    public Entry draw() {
+        return this.bucket.draw().get();
     }
 
     public String[] sizes() {
@@ -99,5 +109,7 @@ public class Sneaker implements Raffle {
         
 
     }
+
+
 
 }
