@@ -22,4 +22,9 @@ public class GUI {
     }
 
 
+    public static void drawWinner(Entry entry){
+
+        System.out.println("\n\t\t¡¡ You are a Winner !!:\n "+ entry.toString());
+    }
+
 }

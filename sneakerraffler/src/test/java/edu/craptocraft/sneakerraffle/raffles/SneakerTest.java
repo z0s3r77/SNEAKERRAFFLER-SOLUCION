@@ -76,7 +76,16 @@ public class SneakerTest {
 
         //Esperamos que haya una Entry Registrada
         assertEquals(1 , sneaker.totalEntries(), 0);
+        sneaker.cancel(entry);
     }
 
+    @Test public  void cancelTest(){
+        Entry entry = new Entry("squanchy@closet.in");
+        sneaker.register(entry);
+        assertEquals(1 , sneaker.totalEntries(), 0);
+        sneaker.cancel(entry);
+        assertEquals(0 , sneaker.totalEntries(), 0);
+
+    }
 
 }
