@@ -70,4 +70,11 @@ public class Entry {
         entry.append("\nemail: "+this.getEmail()+"\nSize: "+this.getSize()+"\nAddres: "+this.getAddress()+"\nPayment: "+this.getPayment()+"\nTotal: "+this.getTotal()+" €\n");
         return entry.toString();
     }
+
+    public boolean equals(Entry entry) {
+        if (this.getEmail() != entry.getEmail() &&  this.getPayment() != entry.getPayment()) {
+            return true;
+        }
+            return false;
+    }
 }

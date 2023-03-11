@@ -43,11 +43,11 @@ public class BucketTest {
         Entry entry = new Entry("squanchy@closet.in");
         entry.payment("squanchy@paypal.com");
 
-        bucket.add(entry);
 
         Entry doubleEntry = new Entry("squan.chy@closet.in");
         doubleEntry.payment("squanchy@paypal.com");
 
+        bucket.add(entry);
         bucket.add(doubleEntry);
 
         assertEquals(1, bucket.totalEntries(), 0);

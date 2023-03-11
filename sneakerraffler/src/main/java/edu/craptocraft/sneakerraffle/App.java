@@ -131,10 +131,10 @@ public class App
         // // cambiando su email pero manteniendo su metodo de pago
         // // El sistema bloquea el registro.
 
-        // Entry doubleEntry = new Entry("squan.chy@closet.in");
-        // doubleEntry.payment("squanchy@paypal.com");
-        // craft.register(doubleEntry);
-        // System.out.println("\t\tSquanchy out!:" + craft.totalEntries());
+         Entry doubleEntry = new Entry("squan.chy@closet.in");
+         doubleEntry.payment("squanchy@paypal.com");
+         craft.register(doubleEntry);
+         System.out.println("\t\tSquanchy out!:" + craft.totalEntries());
 
         // /**
         //  * Genera dos participaciones más
