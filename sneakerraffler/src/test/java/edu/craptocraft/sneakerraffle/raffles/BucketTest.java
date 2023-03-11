@@ -11,27 +11,47 @@ public class BucketTest {
 
     static Bucket bucket;
 
-    @BeforeClass public  static  void initializer(){
+    @BeforeClass
+    public static void initializer() {
 
         bucket = new Bucket();
 
     }
 
-    @Test public  void constructorTest(){
+    @Test
+    public void constructorTest() {
 
         assertNotNull(bucket);
 
     }
 
-    @Test public  void addTest(){
+    @Test
+    public void addTest() {
 
         Entry entry = new Entry("squanchy@closet.in");
         entry.payment("squanchy@paypal.com");
 
         bucket.add(entry);
 
-        assertEquals(1, bucket.totalEntries() , 0);
+        assertEquals(1, bucket.totalEntries(), 0);
 
     }
 
+    @Test
+    public void add2Test() {
+
+        Entry entry = new Entry("squanchy@closet.in");
+        entry.payment("squanchy@paypal.com");
+
+
+        Entry doubleEntry = new Entry("squan.chy@closet.in");
+        doubleEntry.payment("squanchy@paypal.com");
+
+        bucket.add(entry);
+        bucket.add(doubleEntry);
+
+        assertEquals(1, bucket.totalEntries(), 0);
+
+
+    }
 }

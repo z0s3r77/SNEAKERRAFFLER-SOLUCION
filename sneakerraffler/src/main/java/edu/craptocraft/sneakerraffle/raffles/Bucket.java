@@ -11,8 +11,14 @@ public class Bucket {
 
     public Bucket(){}
 
-    public void add(Entry entry){
-        entries.add(entry);
+    void add(Entry entry) {
+        if (!this.isDoubleEntry(entry)) {
+            entries.add(entry);
+        }
+    }
+
+    private boolean isDoubleEntry(Entry entry) {
+        return this.entries.stream().anyMatch(e -> e.getPayment().equalsIgnoreCase(entry.getPayment()));
     }
 
     public Integer totalEntries(){

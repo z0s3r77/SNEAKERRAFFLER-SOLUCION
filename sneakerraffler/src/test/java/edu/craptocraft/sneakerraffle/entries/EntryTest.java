@@ -67,7 +67,7 @@ public class EntryTest {
         entry.payment("squanchy@paypal.com");
 
 
-        String result = "\nemail: squanchy@closet.in\nSize: CUARENTA\nAddres: Nearest closet s/n, 90210, Jerry's House, Via Lactea\nPayment: squanchy@paypal.com\nTotal: 109.99 €";
+        String result = "\nemail: squanchy@closet.in\nSize: CUARENTA\nAddres: Nearest closet s/n, 90210, Jerry's House, Via Lactea\nPayment: squanchy@paypal.com\nTotal: 109.99 €\n";
         assertEquals(result, entry.toString());
     }
 
