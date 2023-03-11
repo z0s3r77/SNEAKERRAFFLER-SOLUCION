@@ -113,9 +113,9 @@ public class App
          * y no se añade la participacion a la rifa.
           */
 
-        // // Registra la participacion de Squanchy
-        // // Muestra el total de participaciones 
-        // // en la rifa que ha de ser 1
+        // Registra la participacion de Squanchy
+        // Muestra el total de participaciones
+        // en la rifa que ha de ser 1
 
       //  craft.register(entry);
   //      System.out.println("\t\tSquanchy in:" + craft.totalEntries());
